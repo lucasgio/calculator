@@ -7,7 +7,6 @@ import {ButtonComponent} from '../components/ButtonComponent';
 export const CalculatorScreen = () => {
   const {
     operation,
-    number,
     previous,
     buildNumber,
     resetValues,
@@ -36,7 +35,7 @@ export const CalculatorScreen = () => {
           <ButtonComponent onPress={() => console.log('+/-')} label="+/-" />
           <ButtonComponent onPress={() => deleteNumber()} label="del" />
           <ButtonComponent
-            onPress={() => subtractOperation}
+            onPress={() => subtractOperation()}
             label="-"
             color={colors.darkOrange}
           />

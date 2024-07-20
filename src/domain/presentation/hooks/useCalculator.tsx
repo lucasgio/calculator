@@ -19,6 +19,7 @@ export const useCalculator = () => {
   useEffect(() => {
     if( lastOperation.current)
     {
+      console.log(lastOperation.current);
       const firstPart = operation.split(' ').at(0);
       setOperation(`${firstPart} ${lastOperation.current} ${number}`);
     } else {
@@ -113,6 +114,8 @@ export const useCalculator = () => {
   const resetValues = () => {
     setNumber(INITALCOUNT) 
     setPrevious(INITALCOUNT);
+    setOperation('');
+    lastOperation.current = undefined;
   };
 
   const deleteNumber = () => {
