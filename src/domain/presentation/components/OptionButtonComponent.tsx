@@ -1,6 +1,6 @@
 import React from 'react';
 import {Pressable, Text} from 'react-native';
-import {styles} from '../../config/theme/app-theme';
+import {styles} from '../../../config/theme/app-theme';
 
 interface OptionButtonComponentProps {
     label: string;

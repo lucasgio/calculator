@@ -1,6 +1,6 @@
 import React from 'react';
 import { View } from 'react-native';
-import { styles } from '../../config/theme/app-theme';
+import { styles } from '../../../config/theme/app-theme';
 import { OptionButtonComponent } from '../components/OptionButtonComponent';
 
 export const OptionButtonScreen = () => {
