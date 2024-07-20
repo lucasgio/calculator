@@ -52,9 +52,9 @@ export const CalculatorScreen = () => {
           />
         </View>
         <View style={styles.buttonContainer}>
+          <ButtonComponent onPress={() => buildNumber('4')} label="4" />
           <ButtonComponent onPress={() => buildNumber('5')} label="5" />
           <ButtonComponent onPress={() => buildNumber('6')} label="6" />
-          <ButtonComponent onPress={() => buildNumber('7')} label="7" />
           <ButtonComponent
             onPress={() => divideOperation()}
             label="/"

@@ -16,7 +16,7 @@ interface ButtonComponentProps {
 
 export const ButtonComponent = ({
     label,
-    color = colors.gray,
+    color = colors.lightGray,
     width = styles.button.width,
     height = styles.button.height,
     onPress
